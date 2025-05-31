@@ -14,7 +14,7 @@ function ProductItem({ productData, buyButton, className }: ProductItemProps) {
                         bg-white
                         flex flex-col items-start justify-center gap-3`, className)}>
             <img src={productData.img} alt="product image" className="rounded-md" />
-            <p className="font-semibold cursor-pointer">{productData.name}</p>
+            <p className="font-semibold cursor-pointer line-clamp-2">{productData.name}</p>
             <div className="w-full flex flex-col gap-1.5">
                 <p className="text-[1.3rem] font-semibold
                                  text-red-700">{formatter.format(productData.regularPrice)}</p>
